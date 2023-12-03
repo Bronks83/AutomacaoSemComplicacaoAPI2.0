@@ -13,6 +13,9 @@ public class Conta {
         this.saldo = saldo;
         this.proprietario = proprietario;
     }
+    public Conta(Cliente proprietario) {
+        this.proprietario = proprietario;
+    }
 
     public String getAgencia() {
         return agencia;

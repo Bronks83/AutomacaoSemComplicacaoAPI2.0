@@ -18,11 +18,11 @@ class ContaTest {
         xuxa = new Cliente("Xuxa", "45645645600", "393938391");
         silvioSantos = new Cliente("Silvio Santos", "19119119100", "0582311X");
 
+
         contaXuxa = new Conta("0001", "0202898970", 2500.00, xuxa);
         contaSilvio = new Conta("0002", "9898020270", 3500.00, silvioSantos);
-
-
     }
+
 
     @Test
     public void realizarTransacao() {
@@ -45,19 +45,19 @@ class ContaTest {
         assertEquals("45645645600", xuxa.getCpf());
         assertEquals("393938391", xuxa.getRg());
     }
+
     @Test
-    public void validarAgencia(){
-        assertEquals("0002",contaSilvio.getAgencia());
-    }
-    @Test
-    public void validarConta(){
-        assertEquals("9898020270",contaSilvio.getNumeroConta());
-    }
-    @Test
-    public void validarProprietario(){
-        assertEquals("Silvio Santos",contaSilvio.getProprietario());
+    public void validarAgencia() {
+        assertEquals("0002", contaSilvio.getAgencia());
     }
 
+    @Test
+    public void validarConta() {
+        assertEquals("9898020270", contaSilvio.getNumeroConta());
+    }
 
-
+    @Test
+    public void validarProprietario() {
+        assertEquals("Silvio Santos", contaSilvio.getProprietario());
+    }
 }
