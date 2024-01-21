@@ -7,7 +7,11 @@ Funcionalidade: Realizar Login
   Cenario: Realizar Login com sucesso
     Dado que tenha um payload valido da API de Login
     Quando envio uma requisicao do tipo POST de Login
+<<<<<<< HEAD
     Entao valido e recebo status 200 no response
+=======
+    Entao valido que recebo status 200 no response
+>>>>>>> 6f1e2e0bdaeb05f24b3f872334317247641d7459
     E armazeno o token que recebo do response de Login
 
   @loginInvalido
@@ -16,6 +20,7 @@ Funcionalidade: Realizar Login
       | email | <email> |
       | senha | <senha> |
     Quando envio uma requisicao do tipo POST de Login
+<<<<<<< HEAD
     Entao valido e recebo status 400 no response
 
     @loginUsuarioInvalido
@@ -26,3 +31,15 @@ Funcionalidade: Realizar Login
     Exemplos:
       | cenario        | email           | senha    |
       | senha invalida | aluno@email.com | invalido |
+=======
+    Entao valido que recebo status 400 no response
+
+    @loginUsuarioInvalido
+    Exemplos:
+      | cenario          | email              | senha    |
+      | usuario invalido | invalido@email.com | 123456   |
+    @loginEmailInvalido
+    Exemplos:
+      | cenario          | email              | senha    |
+      | senha invalida   | aluno@email.com    | invalido |
+>>>>>>> 6f1e2e0bdaeb05f24b3f872334317247641d7459

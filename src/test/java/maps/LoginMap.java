@@ -13,7 +13,16 @@ public class LoginMap {
 
     public static void initLogin(){
         login = new HashMap<>();
+<<<<<<< HEAD
         login.put("email", "aluno@email.com");
         login.put("senha", "123456");
     }
+=======
+        login.put("email","aluno@email.com");
+        login.put("senha","123456");
+
+    }
+
+
+>>>>>>> 6f1e2e0bdaeb05f24b3f872334317247641d7459
 }

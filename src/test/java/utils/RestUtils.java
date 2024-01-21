@@ -61,8 +61,13 @@ public class RestUtils {
     }
 
     public static Response get(Map<String, String> header, String endpoint) {
+<<<<<<< HEAD
         return response = RestAssured.given()
                 .log().all()
+=======
+        return response = RestAssured
+                .given()
+>>>>>>> 6f1e2e0bdaeb05f24b3f872334317247641d7459
                 .relaxedHTTPSValidation()
                 .headers(header)
                 .when()
