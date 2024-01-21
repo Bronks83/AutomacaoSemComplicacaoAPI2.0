@@ -1,0 +1,3 @@
+aula 13
+minutagem 1:24
+src/test/java/maps/LoginMap.java src/test/java/plataformaFilmes/PlataformFilmesTeste.java src/test/java/runner/RunnerTest.java src/test/java/steps/GenericSteps.java src/test/java/steps/LoginSteps.java src/test/java/utils/RestUtils.java src/test/resources/features/login.feature
