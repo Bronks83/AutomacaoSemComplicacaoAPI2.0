@@ -36,29 +36,34 @@ class ContaTest {
 
         assertFalse(resultado);
     }
+
     @Test
-    public void validarAgencia(){
+    public void validarAgencia() {
         assertEquals("0024", contaXuxa.getAgencia());
     }
+
     @Test
-    public void validarConta(){
+    public void validarConta() {
         assertEquals("58880", contaXuxa.getNumeroConta());
     }
+
     @Test
-    public void validarProprietarioConta(){
+    public void validarProprietarioConta() {
         assertEquals(xuxa, contaXuxa.getProprietario());
     }
 
     @Test
-    public void validarNomeCliente(){
+    public void validarNomeCliente() {
         assertEquals("Xuxa", xuxa.getNome());
     }
+
     @Test
-    public void validarCpfCliente(){
+    public void validarCpfCliente() {
         assertEquals("12345678901", xuxa.getCpf());
     }
+
     @Test
-    public void validarRgCliente(){
+    public void validarRgCliente() {
         assertEquals("123456789", xuxa.getRg());
     }
 
